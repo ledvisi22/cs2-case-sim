@@ -1,0 +1,100 @@
+#backgroudImage{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/src/assets/background.jpg);
+  background-size: cover;
+  filter: blur(20px) brightness(0.4);
+  z-index: -1;
+  position: fixed;
+  -webkit-box-shadow: inset 0px 0px 17px 6px rgba(0,0,0,0.67); 
+  box-shadow: inset 0px 0px 17px 6px rgba(0,0,0,0.67);
+}
+#backgroudPattern {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/src/assets/backgroundPattern.png);
+  z-index: -1;
+  position: fixed;
+  background-size: 4px;
+  filter: opacity(0.5) blur(1px);
+}
+
+*{
+  font-family: "stratum-1-web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+#inventoryBase{
+  height: 25vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow: auto;
+}
+
+button {
+  background: linear-gradient(0deg,rgba(182, 180, 179, 1) 0%, rgba(77, 75, 75, 1) 100%);
+  border: none;
+  border-bottom: 5px solid;
+  border-radius: 0;
+  margin: 5px;
+}
+.ItemStyle {
+  padding: 50px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#simulatorDiv {
+  height: 74vh;
+  border-bottom: 1px white solid;
+  overflow: auto;
+}
+.selected {
+  background: linear-gradient(0deg,rgb(97, 96, 95) 0%, rgb(49, 47, 47) 100%);
+}
+#openButtonDiv{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#openButton  {
+  background: unset;
+  background-color: #4BB052;
+  padding: 20px;
+  border-radius: 2px;
+  border: none;
+}
+#openButton:hover {
+  border: none;
+  background-color: #409745;
+}
+#openButton p{
+  font-family: "stratum-2-web", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+.selectedWinner {
+  background: linear-gradient(0deg,rgb(97, 96, 95) 0%, rgb(49, 47, 47) 100%);
+}
+.itemSlot {
+  width: fit-content;
+  height: fit-content;
+}
+.itemSlot p {
+  margin: 0;
+  font-size: smaller;
+  overflow: clip;
+  text-overflow: ellipsis;
+  width: 150px;
+}
+#allCaseItems{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: flex-start;
+}
